@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/qwiklabs-gcp-04-c95945b946e1/datainjection_app','.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '-t', 'gcr.io/qwiklabs-gcp-04-c95945b946e1/datainjection_app']
